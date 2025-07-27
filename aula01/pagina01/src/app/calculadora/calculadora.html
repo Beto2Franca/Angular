@@ -1,19 +1,19 @@
 <section class="container">
     <div class="form-box">
-        <form action="">
+        <form action="" #frm="">
             <h2>Calculadora</h2>
             <label for="numero1">numero 1 </label>
-            <input type="number" name="numero1" id="numero1">
+            <input type="number" name="numero1" id="numero1" [(ngModel)]="n1">
 
             <label for="numero1">numero 2 </label>
-            <input type="number" name="numero2" id="numero2">
+            <input type="number" name="numero2" id="numero2" [(ngModel)]="n2">
 
-            <button type="submit" >Somar</button>
+            <button type="submit" (click)="calcularResultado()" >Somar</button>
 
         </form>
 
         <div class="result-display">
-            <p>Resultado: <span id="result">Valor</span></p>
+            <p>Resultado: <span id="result">{{resultado}}</span></p>
         </div>
     </div>
 </section>
