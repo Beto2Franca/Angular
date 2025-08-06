@@ -9,6 +9,7 @@ section{
 }
 h1{
     text-align: center;
+    color: rgb(76, 80, 82);
 }
 .formulario{
     display: flex;
@@ -21,25 +22,48 @@ h1{
 }
 input[type=text]{
     padding: 10px;
-   
     flex: 1;
+    border: 1px solid rgb(236, 239, 242);
+    border-radius: 5px;
+}
+input[type=text]:hover{
+    border: 1px solid rgb(45, 95, 145);
 }
 button{
     padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgb(59, 164, 235);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(24, 121, 185);
+    cursor: pointer;
 }
 table{
     border-collapse: collapse;
     margin: auto;
     width: 100%;
-    
 }
+thead{
+    background-color: rgb(59, 164, 235);
+    color: aliceblue;
+    font-size: 1.1em;
+}
+
 caption{
     border: 1px solid black;
     border-bottom: none;
     padding: 10px;
+    border: 1px solid rgb(181, 195, 210);
 }
 th,td{
     border: 1px solid black;
     padding: 10px;
     text-align: center;
+    border: 1px solid rgb(181, 195, 210);
+}
+table tr:nth-child(even){
+    background-color: rgb(222, 239, 247);
 }
