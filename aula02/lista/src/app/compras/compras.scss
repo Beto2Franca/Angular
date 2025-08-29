@@ -29,6 +29,9 @@ input[type=text]{
 input[type=text]:hover{
     border: 1px solid rgb(45, 95, 145);
 }
+input[type=checkbox]:hover{
+    cursor: pointer;
+}
 button{
     padding: 10px;
     border-radius: 5px;

@@ -1,7 +1,7 @@
 <section>
     <h1>Suas Compras</h1>
-    <form class="formulario" action="">
-        <input type="text" name="text" id="text" placeholder="Digite o item aqui">
+    <form #frm="ngForm" class="formulario" action="" (ngSubmit)="adicionarItem()">
+        <input type="text" [(ngModel)] = "item" name="item" id="text" placeholder="Digite o item aqui">
         <button type="submit">Adicionar</button>
     </form>
     <table class="tabela">
