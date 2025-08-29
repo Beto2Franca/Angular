@@ -14,17 +14,19 @@
             
         </thead>
         <tbody>
-            <tr>
-                <td>01</td>
-                <td>Arroz</td>
-                <td><input type="checkbox" name="check" id="check"></td>
-            </tr>
 
-            <tr>
-                <td>02</td>
-                <td>Leite</td>
-                <td><input type="checkbox" name="check" id="check"></td>
-            </tr>
+            @for (elemento of lista; track elemento.id) {
+                <tr>
+                    <td>{{elemento.id}}</td>
+                    <td>{{elemento.nome}}</td>
+                    <td><input type="checkbox" name="check" id="check"></td>
+                </tr>
+            }@empty{
+                <tr>
+                    <p>Nenhum Item Adicionado</p>
+                </tr>
+            }
+
         </tbody>
     </table>
 </section>
